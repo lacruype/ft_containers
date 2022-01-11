@@ -9,4 +9,6 @@
 #include <string>
 #include <vector>
 
+# include "../vector.hpp"
+
 #endif

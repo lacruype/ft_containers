@@ -7,7 +7,6 @@ SRCS	= ${addprefix ${SRC_DIR}, ${SRC}}
 SRC		=	main.cpp \
 	
 OBJS	=	${patsubst ${SRC_DIR}%.cpp,${OBJ_DIR}%.o,${SRCS}}
-# OBJS	= $(SRCS:.cpp=.o)
 CC		= clang++
 CFLAGS	= -Wall -Wextra -Werror -std=c++98
 LIB		= 
