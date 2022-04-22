@@ -800,14 +800,14 @@ int main()
 
 	{
 		std::cout << "\n------------- FT Map (key_comp) -------------" << std::endl;
-		std::map<char,int> mymap;
-		std::map<char,int>::key_compare mycomp = mymap.key_comp();
+		ft::map<char,int> mymap;
+		ft::map<char,int>::key_compare mycomp = mymap.key_comp();
 		mymap['a']=100;
 		mymap['b']=200;
 		mymap['c']=300;
 		std::cout << "browsing mymap using its key_comp funciton object:" << std::endl;
 		char highest = mymap.rbegin()->first;     // key value of last element
-		std::map<char,int>::iterator it = mymap.begin();
+		ft::map<char,int>::iterator it = mymap.begin();
 		do {
 			std::cout << it->first << " => " << it->second << '\n';
 		} while (mycomp((*it++).first, highest));
@@ -815,13 +815,13 @@ int main()
 
 	{
 		std::cout << "\n------------- FT Map (value_comp subclass) -------------" << std::endl;
-		std::map<char,int> mymap;
+		ft::map<char,int> mymap;
 		mymap['x']=1001;
 		mymap['y']=2002;
 		mymap['z']=3003;
 		std::cout << "mymap contains:\n";
-		std::pair<char,int> highest = *mymap.rbegin();          // last element
-		std::map<char,int>::iterator it = mymap.begin();
+		ft::pair<char,int> highest = *mymap.rbegin();          // last element
+		ft::map<char,int>::iterator it = mymap.begin();
 		do {
 			std::cout << it->first << " => " << it->second << '\n';
 		} while (mymap.value_comp()(*it++, highest));
@@ -906,6 +906,6 @@ int main()
 		std::cout << ret.first->first << " => " << ret.first->second << std::endl;
 		std::cout << "upper bound to b points to: ";
 		std::cout << ret.second->first << " => " << ret.second->second << std::endl;
-	}
+	}	
 }
 

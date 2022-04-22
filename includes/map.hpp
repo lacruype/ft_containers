@@ -50,9 +50,9 @@ namespace ft
 						comp(c)
 					{}
 
-					bool operator() (const value_type& x, const value_type& y) const
+					bool operator() (const value_type& lhs, const value_type& rhs) const
 					{
-						return comp(x.first, y.first);
+						return comp(lhs.first, rhs.first);
 					}
 			};
 
