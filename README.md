@@ -1,35 +1,21 @@
 # ft_containers
+_____________________________________________________________________________________________________________
 
---------- Mandatory part ---------
-Implement the following containers and turn in the necessary <container>.hpp files:
+I - Introduction
 
-• vector
+School project. Very boring project but also one of the most important, because to understand something to its fullest, what's better than to recreate it yourself :
 
-You don’t have to do the vector<bool> specialization.
+"The standard C++ containers have all a specific usage.
+To make sure you understand them, let’s re-implement them!"
 
-• map
+_____________________________________________________________________________________________________________
 
-• stack
-It will use your vector class as default underlying container. But it must still be
-compatible with other containers, the STL ones included.
-You can pass this assignment without the stack (80/100).
-But if you want to do the bonus part, you have to implement the 3
-mandatory containers: vector, map and stack.
+II - GRADE
 
-You also have to implement:
-• iterators_traits
+![image](https://user-images.githubusercontent.com/56445879/188878462-1def7d9a-5e37-4fb4-af3b-a5ea9d61cd45.png)
 
-• reverse_iterator
+_____________________________________________________________________________________________________________
 
-• enable_if
-Yes, it is C++11 but you will be able to implement it in a C++98 manner.
-This is asked so you can discover SFINAE.
+III - PEER EVALUATION
 
-• is_integral
-
-• equal and/or lexicographical_compare
-
-• std::pair
-
-• std::make_pair
-5
+![image](https://user-images.githubusercontent.com/56445879/188878544-6a9503e4-8a24-421b-a403-8b4270482e88.png)
