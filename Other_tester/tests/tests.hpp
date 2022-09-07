@@ -5,9 +5,9 @@
 # include <map>
 # include <stack>
 # include <iostream>
-# include "../include/vector.hpp"
-# include "../include/map.hpp"
-# include "../include/stack.hpp"
+# include "../../includes/vector.hpp"
+# include "../../includes/map.hpp"
+// # include "../include/stack.hpp"
 
 
 
@@ -66,7 +66,7 @@ inline void check(std::string name, bool good)
 };
 
 template <typename T>
-bool operator==(ft::Vector<T> &a, std::vector<T> &b)
+bool operator==(ft::vector<T> &a, std::vector<T> &b)
 {
 	if (a.size() != b.size())
 		return (false);
@@ -81,13 +81,13 @@ bool operator==(ft::Vector<T> &a, std::vector<T> &b)
 };
 
 template <typename T, typename S>
-bool operator==(ft::Map<T, S> &a, std::map<T, S> &b)
+bool operator==(ft::map<T, S> &a, std::map<T, S> &b)
 {
 	if (a.size() != b.size())
 		return (false);
 	if (a.empty() != b.empty())
 		return (false);
-	typename ft::Map<T, S>::iterator it = a.begin();
+	typename ft::map<T, S>::iterator it = a.begin();
 	typename std::map<T, S>::iterator it2 = b.begin();
 	while (it != a.end())
 	{

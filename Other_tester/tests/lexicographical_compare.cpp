@@ -1,10 +1,10 @@
 #include <iostream>
 #include "tests.hpp"
-#include "../include/utils.hpp"
+// #include "../include/utils.hpp"
 
 // a case-insensitive comparison function:
 bool mycomp (char c1, char c2)
-{ return std::tolower(c1)<std::tolower(c2); }   
+{ return std::tolower(c1)>std::tolower(c2); }   
 
 void test_lexicographical_compare()  
 {
